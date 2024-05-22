@@ -1,10 +1,15 @@
 .root {
-    -fx-background-color: #5b3f5d;
-    -fx-font-family: Calibri;
-    -fx-font-size: 20pt;
-    -fx-fill: white;
+    -fx-background-color: #01161E;
+}
+.color{
+    --fxbackground-color: #124559;
+    -fx-border-color: #11111111; /* Negro */
+    -fx-border-width: 2px; /* Grosor del borde */
 }
 
+.color2{
+    --fxbackground-color: #598392;
+}
 
 .label{
     -fx-text-fill: #ffffff;
