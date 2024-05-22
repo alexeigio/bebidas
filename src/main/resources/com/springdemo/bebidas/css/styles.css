@@ -1,0 +1,88 @@
+.root {
+    -fx-background-color: #5b3f5d;
+    -fx-font-family: Calibri;
+    -fx-font-size: 20pt;
+    -fx-fill: white;
+}
+
+
+.label{
+    -fx-text-fill: #ffffff;
+    -fx-font-family: Alef;
+    -fx-font-size: 16pt;
+}
+
+.title{
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 50pt;
+}
+
+
+.button{
+    -fx-background-color: black;
+    -fx-border-width: 1px;
+    -fx-border-color: white;
+    -fx-border-radius: 5px;
+    -fx-text-fill: white;
+    -fx-min-width: 120px;
+}
+
+.button:hover{
+    -fx-background-color: #c40a0a;
+
+}
+
+.text-field{
+    -fx-background-color: #3f2b50;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-font-family: "JetBrains Mono";
+}
+
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {
+    -fx-background-color: #000;
+    -fx-border-width: 1;
+    -fx-border-color: #fff;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header .label {
+    -fx-alignment: center;
+    -fx-font-size: 16pt;
+    -fx-text-fill: white;
+
+}
+
+.table-row-cell,
+.table-row-cell:odd {
+    -fx-background-color: white;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #7c55a1;
+}
+
+.table-view .table-cell {
+    -fx-border-color: lightgrey;
+    -fx-border-width: 1 0 0 0;
+    -fx-font-size: 16pt;
+    -fx-padding: 5 3 15 3;
+}
+.combo-box {
+    -fx-text-fill: white;
+    -fx-background-color: #3f2b50; /* Cambia esto al color que desees */
+    -fx-border-color: #fff; /* Cambia esto al color del borde que desees */
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #000000; /* Color del texto en el desplegable del ComboBox */
+}
+.context-menu .menu-item {
+    -fx-text-fill: black; /* Color del texto en el menú contextual */
+}
