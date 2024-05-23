@@ -12,6 +12,31 @@
     </padding>
     <Pane styleClass="color" prefHeight="100" prefWidth="100"/>
     <Pane styleClass="color2" prefHeight="100" prefWidth="100"/>
+    <VBox>
+        <VBox>
+            <Label text="Elegir Tamano"/>
+            <HBox>
+                <Button text="Chico" onAction="#onTamanoSeleccionButtonClick"/>
+                <Button text="Mediano" onAction="#onTamanoSeleccionButtonClick"/>
+                <Button text="Grande" onAction="#onTamanoSeleccionButtonClick"/>
+            </HBox>
+        </VBox>
+        <VBox>
+            <Label text="Elegir Sabor"/>
+            <HBox>
+                <Button text="Chico" onAction="#onSaborSeleccionButtonClick"/>
+                <Button text="Mediano" onAction="#onSaborSeleccionButtonClick"/>
+                <Button text="Grande" onAction="#onSaborSeleccionButtonClick"/>
+            </HBox>
+        </VBox>
+        <VBox>
+            <Label text="¿Con Hielo?"/>
+            <HBox>
+                <Button text="Si" onAction="#onHieloSeleccionButtonClick"/>
+                <Button text="No" onAction="#onHieloSeleccionButtonClick"/>
+            </HBox>
+        </VBox>
+    </VBox>
     <VBox alignment="BOTTOM_RIGHT">
         <Button fx:id="btnCerrar" text="Cerrar" onAction="#btnCerrarButtonClick"/>
     </VBox>

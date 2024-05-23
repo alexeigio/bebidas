@@ -13,4 +13,13 @@ public class HelloController {
     public void btnCerrarButtonClick() {
         HelloApplication.cerrar(btnCerrar.getScene());
     }
+
+    public void onSaborSeleccionButtonClick(ActionEvent actionEvent) {
+    }
+
+    public void onTamanoSeleccionButtonClick(ActionEvent actionEvent) {
+    }
+
+    public void onHieloSeleccionButtonClick(ActionEvent actionEvent) {
+    }
 }
