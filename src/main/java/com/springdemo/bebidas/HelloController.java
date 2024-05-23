@@ -7,19 +7,20 @@ import javafx.scene.control.Label;
 
 public class HelloController {
     @FXML
-    private Button btnCerrar;
+    private Button btnCerrar, btnChico, btnMediano, btnGrande, btnJamaica, btnLimon, btnHorchata, btnHieloSi, btnHieloNo;
 
     @FXML
     public void btnCerrarButtonClick() {
         HelloApplication.cerrar(btnCerrar.getScene());
     }
 
-    public void onSaborSeleccionButtonClick(ActionEvent actionEvent) {
+    public void onSaborSeleccionButtonClick() {
+
     }
 
-    public void onTamanoSeleccionButtonClick(ActionEvent actionEvent) {
+    public void onTamanoSeleccionButtonClick() {
     }
 
-    public void onHieloSeleccionButtonClick(ActionEvent actionEvent) {
+    public void onHieloSeleccionButtonClick() {
     }
 }
