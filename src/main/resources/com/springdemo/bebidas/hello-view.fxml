@@ -16,24 +16,24 @@
         <VBox>
             <Label text="Elegir Tamano"/>
             <HBox>
-                <Button fx:id="btnChico" text="Chico" onAction="#onTamanoSeleccionButtonClick"/>
-                <Button fx:id="btnMediano" text="Mediano" onAction="#onTamanoSeleccionButtonClick"/>
-                <Button fx:id="btnGrande" text="Grande" onAction="#onTamanoSeleccionButtonClick"/>
+                <Button value="chico" fx:id="btnChico" text="Chico" onAction="#onTamanoSeleccionButtonClick"/>
+                <Button value="mediano" fx:id="btnMediano" text="Mediano" onAction="#onTamanoSeleccionButtonClick"/>
+                <Button value="grande" fx:id="btnGrande" text="Grande" onAction="#onTamanoSeleccionButtonClick"/>
             </HBox>
         </VBox>
         <VBox>
             <Label text="Elegir Sabor"/>
             <HBox>
-                <Button fx:id="btnJamaica" text="Jamaica" onAction="#onSaborSeleccionButtonClick"/>
-                <Button fx:id="btnLimon" text="Limon" onAction="#onSaborSeleccionButtonClick"/>
-                <Button fx:id="btnHorchata" text="Horchata" onAction="#onSaborSeleccionButtonClick"/>
+                <Button value="jamaica" fx:id="btnJamaica" text="Jamaica" onAction="#onSaborSeleccionButtonClick"/>
+                <Button value="limon" fx:id="btnLimon" text="Limon" onAction="#onSaborSeleccionButtonClick"/>
+                <Button value="horchata" fx:id="btnHorchata" text="Horchata" onAction="#onSaborSeleccionButtonClick"/>
             </HBox>
         </VBox>
         <VBox>
             <Label text="¿Con Hielo?"/>
             <HBox>
-                <Button fx:id="btnHieloSi" text="Si" onAction="#onHieloSeleccionButtonClick"/>
-                <Button fx:id="btnHieloNo" text="No" onAction="#onHieloSeleccionButtonClick"/>
+                <Button value="hielo_si" fx:id="btnHieloSi" text="Si" onAction="#onHieloSeleccionButtonClick"/>
+                <Button value="hielo_no" fx:id="btnHieloNo" text="No" onAction="#onHieloSeleccionButtonClick"/>
             </HBox>
         </VBox>
     </VBox>
