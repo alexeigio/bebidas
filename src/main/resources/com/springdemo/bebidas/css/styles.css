@@ -24,11 +24,11 @@
 
 
 .button{
-    -fx-background-color: black;
+    -fx-background-color: #aec3b0;
     -fx-border-width: 1px;
-    -fx-border-color: white;
+    /*-fx-border-color: white;*/
     -fx-border-radius: 5px;
-    -fx-text-fill: white;
+    -fx-text-fill: #eff6e0;
     -fx-min-width: 120px;
 }
 
