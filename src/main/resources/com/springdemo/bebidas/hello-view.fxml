@@ -1,44 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" prefHeight="543.0" prefWidth="759.0" spacing="20.0" stylesheets="@css/styles.css"
-      xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="com.springdemo.bebidas.HelloController">
+<VBox alignment="CENTER" prefHeight="543.0" prefWidth="759.0" spacing="20.0" stylesheets="@css/styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.springdemo.bebidas.HelloController">
     <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-    <Pane styleClass="color" prefHeight="100" prefWidth="100"/>
-    <Pane styleClass="color2" prefHeight="100" prefWidth="100"/>
-    <VBox>
-        <VBox>
-            <Label text="Elegir Tamano"/>
-            <HBox>
-                <Button fx:id="btnChico" text="Chico" onAction="#onTamanoSeleccionButtonClick"/>
-                <Button fx:id="btnMediano" text="Mediano" onAction="#onTamanoSeleccionButtonClick"/>
-                <Button fx:id="btnGrande" text="Grande" onAction="#onTamanoSeleccionButtonClick"/>
+    <Pane prefHeight="100" prefWidth="100" styleClass="color" />
+    <Pane prefHeight="100" prefWidth="100" styleClass="color2" />
+    <BorderPane prefHeight="720.0" prefWidth="1080.0">
+        <left>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                <children>
+                    <VBox alignment="TOP_CENTER" prefHeight="412.0" prefWidth="378.0" spacing="10.0" style="-fx-background-color: #124559;">
+                        <VBox spacing="10.0">
+                            <Label text="Elegir Tamaño" />
+                            <HBox spacing="10.0">
+                                <Button fx:id="btnChico" onAction="#onTamanoSeleccionButtonClick" text="Chico">
+                                    <styleClass>
+                                        <String fx:value="button" />
+                                        <String fx:value="color2" />
+                                    </styleClass></Button>
+                                <Button fx:id="btnMediano" onAction="#onTamanoSeleccionButtonClick" text="Mediano">
+                                    <styleClass>
+                                        <String fx:value="button" />
+                                        <String fx:value="color2" />
+                                    </styleClass></Button>
+                                <Button fx:id="btnGrande" onAction="#onTamanoSeleccionButtonClick" text="Grande">
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                    <styleClass>
+                                        <String fx:value="button" />
+                                        <String fx:value="color2" />
+                                    </styleClass></Button>
+                            </HBox>
+                        </VBox>
+                        <!--                    <VBox spacing="10.0">-->
+                        <!--                        <Label text="Elegir Sabor" />-->
+                        <!--                        <HBox spacing="10.0">-->
+                        <!--                            <Button fx:id="btnJamaica" onAction="#onSaborSeleccionButtonClick" text="Jamaica" />-->
+                        <!--                            <Button fx:id="btnLimon" onAction="#onSaborSeleccionButtonClick" text="Limon" />-->
+                        <!--                            <Button fx:id="btnHorchata" onAction="#onSaborSeleccionButtonClick" text="Horchata" />-->
+                        <!--                        </HBox>-->
+                        <!--                    </VBox>-->
+                        <!--                    <VBox spacing="10.0">-->
+                        <!--                        <Label text="¿Con Hielo?" />-->
+                        <!--                        <HBox spacing="10.0">-->
+                        <!--                            <Button fx:id="btnHieloSi" onAction="#onHieloSeleccionButtonClick" text="Si" />-->
+                        <!--                            <Button fx:id="btnHieloNo" onAction="#onHieloSeleccionButtonClick" text="No" />-->
+                        <!--                        </HBox>-->
+                        <!--                    </VBox>-->
+                        <HBox.margin>
+                            <Insets />
+                        </HBox.margin>
+                        <padding>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </padding>
+                    </VBox>
+                </children>
             </HBox>
-        </VBox>
-        <VBox>
-            <Label text="Elegir Sabor"/>
-            <HBox>
-                <Button fx:id="btnJamaica" text="Jamaica" onAction="#onSaborSeleccionButtonClick"/>
-                <Button fx:id="btnLimon" text="Limon" onAction="#onSaborSeleccionButtonClick"/>
-                <Button fx:id="btnHorchata" text="Horchata" onAction="#onSaborSeleccionButtonClick"/>
-            </HBox>
-        </VBox>
-        <VBox>
-            <Label text="¿Con Hielo?"/>
-            <HBox>
-                <Button fx:id="btnHieloSi" text="Si" onAction="#onHieloSeleccionButtonClick"/>
-                <Button fx:id="btnHieloNo" text="No" onAction="#onHieloSeleccionButtonClick"/>
-            </HBox>
-        </VBox>
-    </VBox>
+        </left>
+        <right>
+            <VBox prefHeight="412.0" prefWidth="265.0" style="-fx-background-color: #598392;" BorderPane.alignment="CENTER" />
+        </right>
+    </BorderPane>
     <VBox alignment="BOTTOM_RIGHT">
-        <Button fx:id="btnCerrar" text="Cerrar" onAction="#btnCerrarButtonClick"/>
+        <Button fx:id="btnCerrar" onAction="#btnCerrarButtonClick" text="Cerrar">
+            <styleClass>
+                <String fx:value="button" />
+                <String fx:value="color2" />
+            </styleClass></Button>
     </VBox>
 </VBox>
-
