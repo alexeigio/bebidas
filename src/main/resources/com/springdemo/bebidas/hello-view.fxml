@@ -18,42 +18,46 @@
                     <VBox alignment="TOP_CENTER" prefHeight="412.0" prefWidth="378.0" spacing="10.0" style="-fx-background-color: #124559;">
                         <VBox spacing="10.0">
                             <Label text="Elegir Tamaño" />
-                            <HBox spacing="10.0">
-                                <Button fx:id="btnChico" onAction="#onTamanoSeleccionButtonClick" text="Chico">
-                                    <styleClass>
-                                        <String fx:value="button" />
-                                        <String fx:value="color2" />
-                                    </styleClass></Button>
-                                <Button fx:id="btnMediano" onAction="#onTamanoSeleccionButtonClick" text="Mediano">
-                                    <styleClass>
-                                        <String fx:value="button" />
-                                        <String fx:value="color2" />
-                                    </styleClass></Button>
-                                <Button fx:id="btnGrande" onAction="#onTamanoSeleccionButtonClick" text="Grande">
-                                    <HBox.margin>
-                                        <Insets />
-                                    </HBox.margin>
-                                    <styleClass>
-                                        <String fx:value="button" />
-                                        <String fx:value="color2" />
-                                    </styleClass></Button>
-                            </HBox>
+                            <VBox spacing="10.0">
+                                <HBox spacing="10.0">
+                                    <Button fx:id="btnChico" onAction="#onTamanoSeleccionButtonClick" text="Chico">
+                                        <styleClass>
+                                            <String fx:value="button" />
+                                            <String fx:value="color2" />
+                                        </styleClass></Button>
+                                    <Button fx:id="btnMediano" onAction="#onTamanoSeleccionButtonClick" text="Mediano">
+                                        <styleClass>
+                                            <String fx:value="button" />
+                                            <String fx:value="color2" />
+                                        </styleClass></Button>
+                                    <Button fx:id="btnGrande" onAction="#onTamanoSeleccionButtonClick" text="Grande">
+                                        <HBox.margin>
+                                            <Insets />
+                                        </HBox.margin>
+                                        <styleClass>
+                                            <String fx:value="button" />
+                                            <String fx:value="color2" />
+                                        </styleClass></Button>
+                                </HBox>
+
+                                <VBox spacing="10.0">
+                                    <Label text="Elegir Sabor" />
+                                    <HBox spacing="10.0">
+                                        <Button fx:id="btnJamaica" onAction="#onSaborSeleccionButtonClick" text="Jamaica" />
+                                        <Button fx:id="btnLimon" onAction="#onSaborSeleccionButtonClick" text="Limon" />
+                                        <Button fx:id="btnHorchata" onAction="#onSaborSeleccionButtonClick" text="Horchata" />
+                                    </HBox>
+                                </VBox>
+                                <VBox spacing="10.0">
+                                    <Label text="¿Con Hielo?" />
+                                    <HBox spacing="10.0">
+                                        <Button fx:id="btnHieloSi" onAction="#onHieloSeleccionButtonClick" text="Si" />
+                                        <Button fx:id="btnHieloNo" onAction="#onHieloSeleccionButtonClick" text="No" />
+                                    </HBox>
+                                </VBox>
+                            </VBox>
                         </VBox>
-                        <!--                    <VBox spacing="10.0">-->
-                        <!--                        <Label text="Elegir Sabor" />-->
-                        <!--                        <HBox spacing="10.0">-->
-                        <!--                            <Button fx:id="btnJamaica" onAction="#onSaborSeleccionButtonClick" text="Jamaica" />-->
-                        <!--                            <Button fx:id="btnLimon" onAction="#onSaborSeleccionButtonClick" text="Limon" />-->
-                        <!--                            <Button fx:id="btnHorchata" onAction="#onSaborSeleccionButtonClick" text="Horchata" />-->
-                        <!--                        </HBox>-->
-                        <!--                    </VBox>-->
-                        <!--                    <VBox spacing="10.0">-->
-                        <!--                        <Label text="¿Con Hielo?" />-->
-                        <!--                        <HBox spacing="10.0">-->
-                        <!--                            <Button fx:id="btnHieloSi" onAction="#onHieloSeleccionButtonClick" text="Si" />-->
-                        <!--                            <Button fx:id="btnHieloNo" onAction="#onHieloSeleccionButtonClick" text="No" />-->
-                        <!--                        </HBox>-->
-                        <!--                    </VBox>-->
+
                         <HBox.margin>
                             <Insets />
                         </HBox.margin>
